@@ -85,6 +85,11 @@ function imprimirValores() {
     res.appendChild(n3)
 }
 Enviar.addEventListener('click', imprimirValores)
+jQuery( '.Enviar' ).click(function() {
+        jQuery( this ).attr( 'disabled', true );
+        jQuery( this ).attr( 'value', 'Enviando...' );
+        jQuery( this ).submit();
+    });
 </script>
     </body>
 <!-- JavaScript Bundle with Popper -->
